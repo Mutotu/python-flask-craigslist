@@ -31,5 +31,5 @@
 1. reference the overview above to create functions for each route
 1. HOWEVER before you do anything you should create a route for '/seed'
 1. for the /seed route we want you to create a function that will prepopulate your categories and tags (sort of mimicking a seed file) (think part 1 of the apartments homework )
-1. you can create whatever categories and tags you want just make sure to only hit this route or else you'll create multiple entries!!
+1. you can create whatever categories and tags you want just make sure to only hit this route ONCE or else you'll create multiple entries!!
 1. after you've prepopulated your categories and tags comment out the /seed route and the function so you don't accidently hit it again
