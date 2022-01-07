@@ -7,6 +7,7 @@ Create Date: 2021-05-18 16:25:43.046779
 """
 from alembic import op
 import sqlalchemy as sa
+from models import Category
 
 
 # revision identifiers, used by Alembic.
@@ -22,7 +23,17 @@ def upgrade():
     sa.Column('id', sa.Integer, primary_key=True),
     sa.Column('name', sa.String, nullable=False, unique=True)
   )
+    seed()
 
+def seed():
+ 
+  op.bulk_insert(Category.__table__,
+      [
+          {"name":"Test 1"},
+      
+          {"name":"Test 2"}
+      ]
+  )
 
 def downgrade():
     op.drop_table('categories')

@@ -11,9 +11,9 @@
 | POST | /categories/:id/posts | create a new post inside an existing category |
 | GET | /tags | get a list of existing tags |
 | PUT | /tags/:tagId/posts/:postId | associate an existing post with an existing tag |
-| GET | /tags/:tagId/posts | see a list of all posts that are associated with a tag |
-| GET | /posts/:id/tags | see a list of all tags that are associated with a post |
-| DELETE | /posts/:id | delete a post |
+| GET | /tags/:tagId/posts | see a list of all posts that are associated with a tag | >>
+| GET | /posts/:id/tags | see a list of all tags that are associated with a post | >>
+| DELETE | /posts/:id | delete a post | >>
 
 # Setup
 
